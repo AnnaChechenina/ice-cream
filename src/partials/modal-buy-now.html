@@ -1,0 +1,148 @@
+<div class="backdrop is-hidden" data-modal-buy-now>
+  <div class="modal modal--buy-now">
+    <button type="button" class="modal__close-button" data-modal-close-buy-now>
+      <svg>
+        <use href="./images/icons.svg#cross-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal__title modal__title--buy-now">Buy now</p>
+    <div class="modal-image">
+      <ul class="modal-cards">
+        <li class="modal-cards__item">
+          <input
+            id="icecream-check"
+            type="checkbox"
+            name="cocktail-check"
+            class="modal-form-check_icecream visually-hidden"
+          />
+          <label for="icecream-check" class="modal-cards__link icecream-link">
+            <picture class="modal-cards__picture icecream-image">
+              <source
+                srcset="
+                  ./images/modal-buy-now/tablet/icecream-tabdesk-x1-min.png 1x,
+                  ./images/modal-buy-now/tablet/icecream-tabdesk-x2-min.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/modal-buy-now/mobile/icecream-mobile-x1-min.png 1x,
+                  ./images/modal-buy-now/mobile/icecream-mobile-x2-min.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/modal-buy-now/mobile/icecream-mobile-x1-min.png"
+                alt="Ice cream"
+              />
+            </picture>
+            <p class="modal-cards__title">ice cream</p>
+          </label>
+        </li>
+        <li class="modal-cards__item">
+          <input
+            id="icecoffee-check"
+            type="checkbox"
+            name="cocktail-check"
+            class="modal-form-check_icecoffee visually-hidden"
+          />
+          <label for="icecoffee-check" class="modal-cards__link icecoffee-link">
+            <picture class="modal-cards__picture icecoffee-image">
+              <source
+                srcset="
+                  ./images/modal-buy-now/tablet/icecoffee-tabdesk-x1-min.png 1x,
+                  ./images/modal-buy-now/tablet/icecoffee-tabdesk-x2-min.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/modal-buy-now/mobile/icecoffee-mobile-x1-min.png 1x,
+                  ./images/modal-buy-now/mobile/icecoffee-mobile-x2-min.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/modal-buy-now/mobile/icecoffee-mobile-x1-min.png"
+                alt="Ice coffee"
+              />
+            </picture>
+            <p class="modal-cards__title">ice coffee</p>
+          </label>
+        </li>
+        <li class="modal-cards__item">
+          <input
+            id="milkshake-check"
+            type="checkbox"
+            name="cocktail-check"
+            class="modal-form-check_milkshake visually-hidden"
+          />
+          <label for="milkshake-check" class="modal-cards__link milkshake-link">
+            <picture class="modal-cards__picture milkshake-image">
+              <source
+                srcset="
+                  ./images/modal-buy-now/tablet/milkshake-tabdesk-x1-min.png 1x,
+                  ./images/modal-buy-now/tablet/milkshake-tabdesk-x2-min.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/modal-buy-now/mobile/milkshake-mobile-x1-min.png 1x,
+                  ./images/modal-buy-now/mobile/milkshake-mobile-x2-min.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/modal-buy-now/mobile/milkshake-mobile-x1-min.png"
+                alt="Milkshake"
+              />
+            </picture>
+            <p class="modal-cards__title">milkshake</p>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <form class="modal-form">
+      <ul class="modal-form__list">
+        <li class="modal-form__item">
+          <label class="modal-form__label"
+            ><input
+              type="text"
+              name="name"
+              class="modal-form__input"
+              pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+              minlength="2"
+              placeholder="Name"
+              required
+          /></label>
+        </li>
+        <li class="modal-form__item">
+          <label class="modal-form__label"
+            ><input
+              type="tel"
+              name="phone-number"
+              class="modal-form__input"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              placeholder="Phone"
+              required
+          /></label>
+        </li>
+        <li class="modal-form__item">
+          <label class="modal-form__label">
+            <textarea
+              name="comment"
+              class="modal-form__input modal-form__textarea"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+      <button type="submit" class="modal__button modal__button--chocolate">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
